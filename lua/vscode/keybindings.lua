@@ -13,6 +13,12 @@ M.whichkey = {
   end
 }
 
+M.toggleBool = {
+  toggle = function()
+    vscode.action("extension.toggleBool")
+  end
+}
+
 M.general = {
   goToLeftWindow = function()
     vscode.action("workbench.action.navigateLeft")

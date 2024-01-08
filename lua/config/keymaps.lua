@@ -37,6 +37,9 @@ if vim.g.vscode then
   -- TODO: add whichkey support for all keymaps
   set({ 'n', 'v' }, "<leader>", V.whichkey.show)
 
+  -- ? Extensions
+  set({ 'n', 'v' }, "<leader>i", V.toggleBool.toggle)
+
   --? General
   set({ 'n', 't' }, "<C-h>", V.general.goToLeftWindow)
   set({ 'n', 't' }, "<C-j>", V.general.goToUpperWindow)
